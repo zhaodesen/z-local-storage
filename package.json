@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Simplify working with window.localStorage.",
 	"type": "module",
+	"packageManager": "pnpm@8.6.6",
 	"scripts": {
 		"build": "npm-run-all --silent clean build:es build:umd",
 		"release": "bumpp && pnpm publish",

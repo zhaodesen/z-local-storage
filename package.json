@@ -49,7 +49,7 @@
 	"bugs": {
 		"url": "https://github.com/zhaodesen/z-local-storage/issues"
 	},
-	"homepage": "https://github.com/zhaodesen/z-local-storage#readme",
+	"homepage": "https://github.com/zhaodesen/z-local-stora  ge#readme",
 	"license": "MIT",
 	"devDependencies": {
 		"@rollup/plugin-terser": "^0.4.4",

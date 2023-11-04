@@ -1,6 +1,6 @@
 export type Reviver = (this: any, key: string, value: any) => any;
 
-export default class EasyLocalStorage {
+export default class ZLocalStorage {
 
 	static readonly storage: Storage = window.localStorage
 

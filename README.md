@@ -2,22 +2,39 @@
 # z-local-storage
 Simplify working with `window.localStorage`
 ## Install
+### npm
 ```sh
 npm install z-local-storage
 ```
+### yarn
 ```sh
 yarn add z-local-storage
 ```
+### pnpm
 ```sh
 pnpm add z-local-storage
 ```
+### browser
+```html
+<script src="https://unpkg.com/z-local-storage@1.0.4/dist/z-local-storage.umd.js"></script>
+```
+
+## Usage
 
 ```javascript
 // using ES6 modules
 import ZLocalStorage from 'z-local-storage'
+// using CommonJS 
+const ZLocalStorage = require('z-local-storage')
+// using Browser
+ZLocalStorage.setItem('name', 'zhao')
 ```
 
-## Usage
+
+
+
+
+## Example
 ```js
 import ZLocalStorage from 'z-local-storage'
 

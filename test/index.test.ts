@@ -1,24 +1,24 @@
-import EasyLocalStorage from '../src/index'
+import ZLocalStorage from '../src/index'
 
 test('setItem', () => {
-	EasyLocalStorage.setItem('name', 'zhao')
-	expect(EasyLocalStorage.getItem('name')).toBe('zhao');
+	ZLocalStorage.setItem('name', 'zhao')
+	expect(ZLocalStorage.getItem('name')).toBe('zhao');
 });
 test('removeItem', () => {
-	EasyLocalStorage.removeItem('name')
-	expect(EasyLocalStorage.getItem('name')).toBe(null);
+	ZLocalStorage.removeItem('name')
+	expect(ZLocalStorage.getItem('name')).toBe(null);
 });
 test('clear', () => {
-	EasyLocalStorage.setItem('name', 'zhao')
-	EasyLocalStorage.clear()
-	expect(EasyLocalStorage.getItem('name')).toBe(null);
+	ZLocalStorage.setItem('name', 'zhao')
+	ZLocalStorage.clear()
+	expect(ZLocalStorage.getItem('name')).toBe(null);
 });
 
 test('push', () => {
-	EasyLocalStorage.push('arr', 10)
-	expect(EasyLocalStorage.getItem('arr')).toStrictEqual([10]);
+	ZLocalStorage.push('arr', 10)
+	expect(ZLocalStorage.getItem('arr')).toStrictEqual([10]);
 });
 test('add', () => {
-	EasyLocalStorage.add('user', 'name', 'zhao')
-	expect(EasyLocalStorage.getItem('user')).toStrictEqual({ name: 'zhao' });
+	ZLocalStorage.add('user', 'name', 'zhao')
+	expect(ZLocalStorage.getItem('user')).toStrictEqual({ name: 'zhao' });
 });

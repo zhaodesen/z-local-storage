@@ -10,9 +10,11 @@
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"removeComments": false,
+		"declaration": true,
+    "emitDeclarationOnly": true,
+		"outDir": "./dist" 
 	},
 	"include": [
 		"src/*.ts",
-		"test/*.ts",
 	]
 }

@@ -1,5 +1,5 @@
 
-# easy-local-storage
+# z-local-storage
 Simplify working with `window.localStorage`
 ## Install
 ```sh

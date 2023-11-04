@@ -16,7 +16,7 @@ pnpm add z-local-storage
 ```
 ### browser
 ```html
-<script src="https://unpkg.com/z-local-storage@1.0.4/dist/z-local-storage.umd.js"></script>
+<script src="https://unpkg.com/z-local-storage@1.0.5/dist/z-local-storage.umd.js"></script>
 ```
 
 ## Usage

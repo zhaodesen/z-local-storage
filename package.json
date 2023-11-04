@@ -5,9 +5,10 @@
 	"type": "module",
 	"packageManager": "pnpm@8.6.6",
 	"scripts": {
-		"build": "npm-run-all --silent clean build:es build:umd",
 		"release": "bumpp && pnpm publish",
-		"build:es": "rollup --config build/rollup.config.es.js",
+		"build": "npm-run-all --silent clean build:common build:esm build:umd",
+		"build:common": "rollup --config build/rollup.config.common.js",
+		"build:esm": "rollup --config build/rollup.config.esm.js",
 		"build:umd": "rollup --config build/rollup.config.umd.js",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint src test --ext ts",
@@ -15,15 +16,15 @@
 		"test": "jest"
 	},
 	"types": "dist/index.d.ts",
-	"main": "dist/z-local-storage.umd.js",
+	"main": "dist/z-local-storage.common.js",
 	"module": "dist/z-local-storage.esm.js",
 	"browser": "dist/z-local-storage.umd.js",
 	"source": "src/index.ts",
 	"exports": {
 		"types": "./dist/index.d.ts",
 		"module": "./dist/z-local-storage.esm.js",
-		"import": "./dist/z-local-storage.esm.js",
-		"require": "./dist/z-local-storage.umd.js",
+		"import": "./dist/z-local-storage.common.js",
+		"require": "./dist/z-local-storage.common.js",
 		"default": "./dist/z-local-storage.esm.js"
 	},
 	"files": [

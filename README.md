@@ -3,41 +3,41 @@
 Simplify working with `window.localStorage`
 ## Install
 ```sh
-npm install easy-local-storage
+npm install z-local-storage
 ```
 ```sh
-yarn add easy-local-storage
+yarn add z-local-storage
 ```
 ```sh
-pnpm add easy-local-storage
+pnpm add z-local-storage
 ```
 
 ```javascript
 // using ES6 modules
-import EasyLocalStorage from 'easy-local-storage'
+import ZLocalStorage from 'z-local-storage'
 ```
 
 ## Usage
 ```js
-import EasyLocalStorage from 'easy-local-storage'
+import ZLocalStorage from 'z-local-storage'
 
 // set value
-EasyLocalStorage.setItem('name', 'zhao')
+ZLocalStorage.setItem('name', 'zhao')
 
 // get value
-EasyLocalStorage.getItem('name') // 'zhao'
+ZLocalStorage.getItem('name') // 'zhao'
 
 // remove key
-EasyLocalStorage.removeItem('name')
+ZLocalStorage.removeItem('name')
 
 // clearing all keys
-EasyLocalStorage.clear()
+ZLocalStorage.clear()
 
 // Array-specific
-EasyLocalStorage.push('arr', 10)
-EasyLocalStorage.getItem('arr') // [10]
+ZLocalStorage.push('arr', 10)
+ZLocalStorage.getItem('arr') // [10]
 
 // Object-specific
-EasyLocalStorage.add('user', 'name', 'zhao')
-EasyLocalStorage.getItem('user') // { name: 'zhao' }
+ZLocalStorage.add('user', 'name', 'zhao')
+ZLocalStorage.getItem('user') // { name: 'zhao' }
 ```

@@ -11,8 +11,7 @@
 		"esModuleInterop": true,
 		"removeComments": false,
 		"declaration": true,
-    "emitDeclarationOnly": true,
-		"outDir": "./dist" 
+		"outDir": "./dist" ,
 	},
 	"include": [
 		"src/*.ts",
